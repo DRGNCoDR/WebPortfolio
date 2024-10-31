@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DRGNCoDR Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio resume website for DRGNCoDR">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ray Fradella">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bolt" />
+</head>
+<style>
+    *{
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+    }
+
+    nav > ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .hr-text {
+    line-height: 1em;
+    position: relative;
+    border: 0;
+    text-align: center;
+    opacity: .8;
+    &:before {
+        content: '';
+        background: linear-gradient(to right, transparent, white, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+    &:after {
+        content: attr(data-content);
+        position: relative;
+        padding: 0 .5em;
+        color: white;
+        background-color: black;
+    }
+    }
+
+.topleft {
+  position: relative;
+  top: 0px;
+  /* left: -30%; */
+  font-size: 18px;
+  min-height: 5%;
+  width: 20%;
+  background-color: rgb(1, 88, 59);
+  border: 2px solid;
+  border-radius: 30%;
+  vertical-align: middle;
+  text-align: center;
+}
+.container {
+    position: relative;
+}
+.pad-5{
+    padding:5px;
+}
+.pad-10{
+    padding:10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.center-container{
+    text-align: center;
+    width: 70%;
+    margin:auto;
+    border:2px solid white;
+    border-radius: 10px;
+}
+.project > img{
+    width: 100%;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button>
+                    Icon Legend
+                </button>
+            </li>
+            <li>
+                <a href="https://github.com/DRGNCoDR" target="_blank">
+                    Github
+                </a>
+            </li>
+            <li>
+                <button>
+                    Cotact
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <div class="center-container pad-10">
+        <div >
+        <h2 class="name">DRGNCoDR</h2>
+        <h3 class="profession">Application Software Developer</h3>
+        <p>An application software developer with over 5 years of experience, in a variety of languages, frameworks, and APIs.</p>
+    </div>
+<div>
+    <hr class="hr-text"  data-content="Projects">
+</div>
+<div class="flex pad-10">
+    <div class="project">
+        <span class="material-symbols-outlined topleft">bolt</span>
+        <img src="https://storage.googleapis.com/pod_public/1300/175822.jpg" alt="" width="30%" height="auto">
+        <h3>Project1</h3>
+        <p>Description</p>
+        <div class="">
+            <button>Demo</button>
+            <button>See Code</button>
+        </div>
+    </div>
+    <div class="project">
+        <span class="material-symbols-outlined topleft"></span>
+        <img src="https://storage.googleapis.com/pod_public/1300/175822.jpg" alt="" width="30%" height="auto">
+        <h3>Project1</h3>
+        <p>Description</p>
+        <div class="">
+            <button>Demo</button>
+            <button>See Code</button>
+        </div>
+    </div>
+    <div class="project">
+        <span class="material-symbols-outlined topleft">bolt</span>
+        <img src="https://storage.googleapis.com/pod_public/1300/175822.jpg" alt="" width="30%" height="auto">
+        <h3>Project1</h3>
+        <p>Description</p>
+        <div class="">
+            <button>Demo</button>
+            <button>See Code</button>
+        </div>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>

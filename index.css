@@ -38,6 +38,10 @@ nav > ul{
     min-height: 300px;
     padding-bottom: 10%;
 }
+.border-2{
+    border:2px solid white;
+    border-radius: 10px;
+}
 /* .topleft {
 position: relative;
 top: 0px;
